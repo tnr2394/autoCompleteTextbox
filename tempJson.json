@@ -1,4 +1,5 @@
-// $scope.students = [
+{
+	"data" : [
 	{"id":1,"name":"Gerald Richards","city":"Tembol","email":"grichards0@hubpages.com","gender":"Male","ip_address":"73.158.96.53"},
 	{"id":2,"name":"Rebecca Flores","city":"Mogadishu","email":"rflores1@hibu.com","gender":"Female","ip_address":"70.114.137.170"},
 	{"id":3,"name":"Maria Collins","city":"Aykhal","email":"mcollins2@scribd.com","gender":"Female","ip_address":"208.112.205.176"},
@@ -998,4 +999,6 @@
 	{"id":997,"name":"George Ford","city":"Oslo","email":"gfordro@blogs.com","gender":"Male","ip_address":"141.217.219.52"},
 	{"id":998,"name":"Raymond Wright","city":"Picton","email":"rwrightrp@ucla.edu","gender":"Male","ip_address":"254.91.244.253"},
 	{"id":999,"name":"Judith Rice","city":"Dingchang","email":"jricerq@house.gov","gender":"Female","ip_address":"237.80.122.72"},
-	{"id":1000,"name":"Joshua Kelly","city":"San Pedro","email":"jkellyrr@businessinsider.com","gender":"Male","ip_address":"46.162.159.177"}];
+	{"id":1000,"name":"Joshua Kelly","city":"San Pedro","email":"jkellyrr@businessinsider.com","gender":"Male","ip_address":"46.162.159.177"}
+	]	
+}

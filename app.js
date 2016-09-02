@@ -1,27 +1,30 @@
-angular.module('myApp',['ngSanitize'])
+angular.module('myApp',['autoCompleteTextBoxModule'])
 .controller('myCtrl',function($scope,$http,$timeout){
-	activate();
-	$scope.myObject = null;
-	$scope.displayBonafied = ['name','grno'];
-	$scope.displayReject = ['name','sid','address'];
 
-	$scope.generateBonafied = function(x){
-		$timeout(function(){
-			$scope.$apply();
-			console.log("generateBonafied",$scope.myObject);
+	$scope.displayArray1 = ['name','city'];
+	$scope.displayArray2 = ['name','gender','email'];
+
+	activate();
+	function activate(){
+		$http.get("tempJson.json")
+		.then(function(response){
+			$scope.arrayOfJson = response.data.data;
 		});
-		// alert(x.name); 
 	}
 
-	$scope.reject = function(x){$timeout(function(){
+	$scope.function1 = function(){
+		$timeout(function(){
+			console.log($scope.myObject1);
 			$scope.$apply();
-			console.log("reject",$scope.myObject2);
-		});}
-	function activate(){
-		$http.post("http://132.140.160.112/collegeAdmin/server/admin/student/getStudents.php")
-		.then(function(response){
-			$scope.students = response.data;
 		});
+	}
+
+	$scope.function2 = function(){
+		$timeout(function(){
+			console.log($scope.myObject2);
+			$scope.$apply();
+		});
+
 	}
 })
 		

@@ -1,11 +1,12 @@
 {
-  "name": "autoCompleteTextbox",
+  "name": "angular-auto-complete-textbox-tirthraj",
   "authors": [
     "tirthraj barot"
   ],
   "description": "autoCompleteTextbox is a directive that acts as default <dataset> autocomplete textbox of html, but it is used for array of jsonObjects. This also facilitates the customization of view generated for autocomplete.",
   "main": "index.html",
   "moduleType": [],
+  "ignore" : "bower_components/*",
   "license": "MIT",
   "homepage": "index.html",
   "private": false,

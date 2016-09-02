@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+		<script src="app.js"></script>
+		<script src="directive.js"></script>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/w3.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body ng-app="myApp">
+		<div class="container">
+			<div class="row">
+				<div class="lead page-header">
+					Directive Example
+				</div>
+			</div>			
+			<div class="row" ng-controller="myCtrl">
+				<div class="col-md-10 col-md-offset-1">
+
+
+					<my-directive 
+						placeholdertext="Enter Name" 
+						array='students' 
+						buttontext="Generate Bonafied"
+						output="myObject" 
+						search = "name" 
+						display = "displayBonafied"
+						callback="generateBonafied(myObject)">
+					</my-directive>
+
+
+					<my-directive 
+						placeholdertext="Enter Grno" 
+						buttontext = "Reject"
+						array='students' 
+						search = "grno"
+						display = "displayReject"
+						output="myObject2" 
+						callback="reject(myObject2)">
+					</my-directive>
+					<h1>{{myObject}}</h1>
+
+					<h1>{{myObject2}}</h1>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -10,7 +10,7 @@ angular.module('autoCompleteTextBoxModule',['ngSanitize'])
 			output : '=',
 			callback : '&callback'
 		},
-		templateUrl : 'dist/directive.html',
+		templateUrl : 'bower_components/angular-auto-complete-textbox-tirthraj/dist/directive.html',
 		controller : function($scope){
 			$scope.showList = [];
 			$scope.show=false;

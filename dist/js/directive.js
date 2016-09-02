@@ -10,7 +10,7 @@ angular.module('autoCompleteTextBoxModule',['ngSanitize'])
 			output : '=',
 			callback : '&callback'
 		},
-		templateUrl : 'directive.html',
+		templateUrl : 'dist/directive.html',
 		controller : function($scope){
 			$scope.showList = [];
 			$scope.show=false;

@@ -1,9 +1,9 @@
 angular.module('myApp',['autoCompleteTextBoxModule'])
 .controller('myCtrl',function($scope,$http,$timeout){
 
-	$scope.displayArray1 = ['name','city'];
+	$scope.displayArray1 = ['name','city','email','ip_address'];
 	$scope.displayArray2 = ['name','gender','email'];
-
+	$scope.searchAra = ['name','email','city','ip_address'];
 	activate();
 	function activate(){
 		$http.get("tempJson.json")

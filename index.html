@@ -1,76 +1,57 @@
 <html>
-	<head>
-		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
-		<script src="bower_components/angular/angular.js"></script>
-		<script src="bower_components/jquery/dist/jquery.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-		<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<head>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 
-		<script src="dist/js/directive.js"></script>
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-		<link rel="stylesheet" href="dist/css/style.css">
-		<script src="app.js"></script>
-	</head>
-	<body ng-app="myApp"  ng-controller="myCtrl">
-		<div class="container">
-			<div class="row">
-				<div class="lead page-header">
-					Directive Example
-				</div>
-			</div>			
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-			
-
-					<auto-complete-textbox 
-						placeholdertext="Enter Name" 
-						array='arrayOfJson' 
-						output="myObject1" 
-						search = "searchAra" 
-						display = "displayArray1"
-						callback="function1()">
-					</auto-complete-textbox>
-
-
-					<auto-complete-textbox 
-						placeholdertext="Enter Name" 
-						array='arrayOfJson' 
-						search = "name"
-						display = "displayArray2"
-						output="myObject2" 
-						callback="function2()">
-					</auto-complete-textbox>
-
-				</div>	
+	<script src="dist/js/directive.js"></script>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="dist/css/style.css">
+	<script src="app.js"></script>
+</head>
+<body ng-app="myApp"  ng-controller="myCtrl">
+	<div class="container">
+		<div class="row">
+			<div class="lead page-header">
+				Directive Example
 			</div>
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1 well-lg">
-					<div class="well-sm bg-success" ng-show="myObject1"><div class="lead">Object 1 : </div>
+		</div>			
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<auto-complete-textbox 
+				placeholdertext="Enter Name" 
+				array='arrayOfJson' 
+				output="myObject1" 
+				search = "searchAra" 
+				display = "displayArray1"
+				callback="function1()">
+			</auto-complete-textbox>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1 well-lg">
+			<div class="well-sm bg-success" ng-show="myObject1"><div class="lead">Object 1 : </div>
 
-					<hr>
-					<h3 class="page-header">Processed Form</h3>
-						<table class="table">
-							<tr>
-								<th>Key</th>
-								<th>Value</th>
-							</tr>
-							<tr ng-repeat="(x,y) in myObject1">
-								<td>
-									{{x}}
-								</td>
-								<td>
-									{{y}}
-								</td>
-							</tr>
-						</table>
-					</div><br>
- 
-					<div class="well-sm bg-info" ng-show="myObject2"><div class="lead">Object 2 : </div>
-					<h3 class="page-header">Raw Form</h3>
-					<p style="  word-wrap: break-word;">{{myObject2}}</p>
-				</div>
-				<br>
-			</div>
+			<hr>
+			<h3 class="page-header">Processed Form</h3>
+			<table class="table">
+				<tr>
+					<th>Key</th>
+					<th>Value</th>
+				</tr>
+				<tr ng-repeat="(x,y) in myObject1">
+					<td>
+						{{x}}
+					</td>
+					<td>
+						{{y}}
+					</td>
+				</tr>
+			</table>
 		</div>
-	</body>
+	</div>
+</div>
+</body>
 </html>

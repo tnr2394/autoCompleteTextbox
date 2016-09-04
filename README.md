@@ -115,7 +115,7 @@ If you want to edit the autocomplete list, edit the following function inside th
 `'ngSanitize'` has been injected already. So edit it the way you want and generate your custom display
 
 
-[Here is a plunker to demonstrate this autoCompleteTextbox.](https://embed.plnkr.co/iPN4axYmrXGsuWikxhmk/)
+### [Here is a plunker to demonstrate this autoCompleteTextbox.](https://embed.plnkr.co/iPN4axYmrXGsuWikxhmk/)
 
 
 The `index.html` will demonstrate the working of the directive.

@@ -11,19 +11,8 @@ angular.module('myApp',['autoCompleteTextBoxModule'])
 		});
 	}
 
-	$scope.function1 = function(){
-		$timeout(function(){
-			console.log($scope.myObject1);
-			$scope.$apply();
-		});
-	}
-
-	$scope.function2 = function(){
-		$timeout(function(){
-			console.log($scope.myObject2);
-			$scope.$apply();
-		});
-
+	$scope.function1 = function(x){
+			console.log(x);
 	}
 })
 		
